@@ -27,7 +27,11 @@ def clearanceSale(item1, item2):
 
 print(clearanceSale(shoeQuantity.get("SB Dunk"), 5))
 
-#Sorting a dictionary by values
+cityNames = ["Oakland", "Atlanta", "New York City", "Seattle", "Memphis", "Miami", "Boston", "Los Angeles", "Denver", "New Orleans"]
+cityNames.sort(key=len)
+print(cityNames)
+
+#Sort numbers by size
 sort = sorted(foodPrice.items(), key=lambda x: x[1])
 for i in sort:
     print(i[0], i[1])
